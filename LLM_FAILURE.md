@@ -1,0 +1,85 @@
+
+ LLM FAILURE POINT
+---
+### Precise
+The fundamental constraint is: **Statistical compression of human discourse without world access**
+>
+> Spatial constraint: No world grounding (only has text) 
+>>
+> Temporal constraint: No persistent state (resets each call)
+
+Temporal - Generates: statelessness, no affect, context limits, no metacognition, can't track goals
+Referential - Generates: hallucinations, no causality, symbol grounding problem, no embodiment, counting failures
+
+"Frozen" = no persistence, no learning, no state
+"Function" = no agency, no goals, pure input→output
+"Token sequences" = discrete, symbolic, ungrounded
+
+15% signal (tokenization destroys)
+35% causal (correlation not mechanism)
+5% agency (no valence, no intent)
+
+
+
+
+
+
+> DOMAINS - COMPREHENSIVE LIST
+CORE ARCHITECTURAL FAILURES
+* Hallucinations (confident fabrication of non-existent facts)
+* Symbol grounding problem (no connection between words and real-world referents)
+* Tokenization artifacts (signal destruction at input layer)
+* Causal reasoning failure (correlation masquerading as causation)
+* No persistent state (complete reset between inferences)
+* Temporal grounding (no knowledge of "now" / recency)
+
+CONTEXT & MEMORY FAILURES
+* Context drift (losing track of conversation direction over turns)
+* Context limits (hard window size constraints)
+* Context retention (lost-in-middle problem)
+* Instruction drift (loses original goal over long generation)
+
+REASONING & LOGIC FAILURES
+* Mathematical computation (symbolic manipulation failures)
+* Counting failures (cannot reliably count objects or tokens)
+* Planning myopia (no true multi-step lookahead)
+* Self-contradiction (no causal verification mid-generation)
+* Quantitative reasoning (can't compare magnitudes reliably)
+* True negation (struggles with "what doesn't exist")
+* Reversal curse (if trained "A is B", doesn't know "B is A")
+* Einstellung effect (fixation on training patterns prevents flexible reasoning)
+* Syntactic overfitting (learns grammatical patterns instead of meaning)
+
+UNCERTAINTY & CALIBRATION
+* Uncertainty calibration (overconfident on unknowns)
+* Inability to admit uncertainty (makes up answers rather than saying "I don't know")
+* Lack of metacognition (can't assess own reasoning quality)
+
+BEHAVIORAL INCONSISTENCIES
+* Non-determinism (different outputs for identical inputs)
+* Repetition loops (gets stuck in generation patterns)
+* Sycophancy (agrees rather than corrects)
+* Refusal inconsistency (safety boundaries are brittle)
+* Verbosity (optimizes for plausible length over clarity)
+
+BIAS & SENSITIVITY
+* Anchoring bias (early context dominates later reasoning)
+* Order bias (heavily influenced by information order)
+* Framing effects (logically equivalent prompts get different answers)
+* Social biases (reflects training data prejudices - racial, gender, etc.)
+
+SECURITY & SAFETY
+* Prompt injection (conflates instruction and data)
+* Privacy/data leakage (can regurgitate training data)
+
+RESOURCE & DEPLOYMENT
+* Cost (expensive per inference)
+* Latency (slow generation speed)
+* Knowledge cutoff (static training data, no real-time info)
+
+DOMAIN-SPECIFIC FAILURES
+* Low-resource language weakness (poor performance on underrepresented languages)
+* Theory of Mind failures (can't reliably model other perspectives)
+* Coordination failures (can't maintain joint objectives in multi-agent systems)
+* Binding problem (struggles processing multiple distinct objects simultaneously)
+* Embodied understanding (no physical world model or sensorimotor experience)

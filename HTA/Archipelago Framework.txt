@@ -1,0 +1,37 @@
+THE ARCHIPELAGO FRAMEWORK
+REALM 1: SIGNAL PROCESSOR
+
+Domain: Raw continuous data (bytes, pixels, waveforms)
+Input: Unprocessed information streams
+Output: Structured patterns with preserved morphology
+Contract: "I preserve what tokenizers destroy"
+
+REALM 2: SALIENCE EVALUATOR
+
+Domain: Priority weighting and arousal
+Input: Signals from Realm 1
+Output: Weighted attention scores + persistent state vector
+Contract: "I tell you what matters before you know what it means"
+
+REALM 3: WORLD SIMULATOR
+
+Domain: Causal mechanics and physics
+Input: Conceptual queries from other realms
+Output: State transition predictions, verified causality
+Contract: "I run the physics, not just correlate outcomes"
+This is where Acatalepsy lives
+
+REALM 4: SEMANTIC ENGINE
+
+Domain: Symbol manipulation and language
+Input: Grounded, weighted, causally-verified concepts
+Output: Coherent symbolic responses
+Contract: "I generate text, but I'm not the brain"
+This is where the LLM lives
+
+REALM 5: GOAL ARBITER
+
+Domain: Intent tracking and outcome optimization
+Input: Context + objectives from conversation
+Output: Strategic directives to other realms
+Contract: "I maintain what we're actually trying to achieve"

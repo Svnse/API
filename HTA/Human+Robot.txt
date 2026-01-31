@@ -1,0 +1,35 @@
+STAGE 1: PATTERN RECOGNITION
+
+Human: Letters/phonemes are detected
+Mechanical: Input signal is matched against stored templates
+Dimension: Match confidence (how strongly does this pattern activate?)
+
+STAGE 2: SEMANTIC ACTIVATION
+
+Human: The concept activates in your mental network
+Mechanical: A node in the knowledge graph receives activation energy
+Dimension: Activation strength (how much does this concept "light up"?)
+
+STAGE 3: SPREADING ACTIVATION
+
+Human: Related concepts come to mind (fire→heat→danger→water)
+Mechanical: Weighted edges propagate activation to connected nodes
+Dimension: Network topology (what connects to what, how strongly?)
+
+STAGE 4: PRIORITY WEIGHTING
+
+Human: Your body responds - pupils dilate, attention sharpens
+Mechanical: Resource allocation shifts - this concept gets more compute
+Dimension: Salience (how much does this matter right now?)
+
+STAGE 5: MEMORY INTEGRATION
+
+Human: Past experiences with fire surface
+Mechanical: Episodic records tagged with "fire" are retrieved
+Dimension: Temporal depth (how far back in history to search?)
+
+STAGE 6: ACTION PREPARATION
+
+Human: You prepare a response - flee, extinguish, investigate
+Mechanical: Output pathways are activated based on context+goal
+Dimension: Motor readiness (what behavioral programs are loaded?)

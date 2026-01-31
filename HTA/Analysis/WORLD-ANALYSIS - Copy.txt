@@ -1,0 +1,53 @@
+### L0 — Sensory Signal
+
+**Human State:** Raw physical artifact (high-bandwidth stream).
+**World Model Impact:** **90% (High Fidelity)**
+
+* **Example:** A world model (e.g., video generator or autonomous drive stack) ingests raw pixel patches or LiDAR point clouds directly. It preserves the "suns3t" visual data perfectly.
+* **The Component:** **ViT Encoders / Convolutional Encoders.** These map continuous signals into latent space without discrete tokenization loss.
+* **The Fix:** **Multimodal Fusion.** Ensure audio, visual, and haptic (if available) streams are fused early to prevent "sensory decoupling."
+
+### L1 — Affective Response
+
+**Human State:** Physiological valence (safety/utility weighting).
+**World Model Impact:** **20% (Rudimentary)**
+
+* **Example:** In Reinforcement Learning (RL), this is the "Reward Function." It is external and sparse. The model doesn't "fear" crashing; it just receives a `-100` score after the crash.
+* **The Component:** **Scalar Reward Signal.** It is a single number, lacking the dimensionality of human emotion (e.g., anxiety vs. terror).
+* **The Fix:** **Intrinsic Motivation / Homeostasis.** Implement internal "drive" variables (e.g., curiosity, energy preservation) that the model must satisfy, rather than just chasing external points.
+
+### L2 — Concept Categorization
+
+**Human State:** Abstract prototypes (Object permanency).
+**World Model Impact:** **85% (Strong)**
+
+* **Example:** Joint-Embedding Architectures (like JEPA) learn that a "Chair" is a solid object that impedes movement, even if it doesn't have the word for it. It understands "obstacle" fundamentally.
+* **The Component:** **Latent State Representation.** It clusters states by functional similarity (what can I do here?) rather than semantic similarity (what is this called?).
+* **The Fix:** **Disentanglement.** Force the model to separate "lighting" from "geometry" so it recognizes the object is unchanged even if the room goes dark.
+
+### L3 — Relational Context
+
+**Human State:** Causal world model & physics simulation.
+**World Model Impact:** **80% (Primary Function)**
+
+* **Example:** If a ball rolls behind a couch, a World Model predicts it will emerge on the other side. It models  based on  + .
+* **The Component:** **Forward Dynamics Model.** It explicitly predicts future states based on current states and actions.
+* **The Fix:** **Long-Horizon Consistency.** Current models suffer from "drift" (blurriness or hallucination) over long timelines. Fix by predicting abstract feature states, not pixel-perfect futures (H-JEPA).
+
+### L4 — Symbolic Representation
+
+**Human State:** Discrete language tokens.
+**World Model Impact:** **10% (The Bottleneck)**
+
+* **Example:** The model understands exactly how to catch a ball (physics) but cannot explain *why* or describe the trajectory in words. It is "mute."
+* **The Component:** **Continuous Vector Space.** World models operate in float values, not integer tokens. There is no native bridge to language.
+* **The Fix:** **Neuro-Symbolic Bridge.** Implement a quantization layer that maps specific latent clusters (L2) to discrete tokens (L4), allowing the model to "report" its internal state.
+
+### L5 — Pragmatic Utility
+
+**Human State:** Intent and planning.
+**World Model Impact:** **60% (Task Dependent)**
+
+* **Example:** In Model-Based RL (e.g., AlphaZero), the system simulates 1000 futures to pick the winning move. It is highly goal-oriented but narrow.
+* **The Component:** **Model-Predictive Control (MPC) / Tree Search.** The "planner" that uses the L3 simulator to make decisions.
+* **The Fix:** **Hierarchical Planning.** Instead of planning every micro-movement, the model needs high-level "Options" (e.g., "Go to door" vs. "Move leg 10 degrees") to match human strategic intent.

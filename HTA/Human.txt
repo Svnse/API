@@ -1,0 +1,41 @@
+L0 — Sensory Signal
+Definition: The physical artifact of the word.
+
+Function: Detection of raw acoustic frequencies (if heard) or visual geometric patterns (if read).
+
+State: At this stage, the word is just data (sound waves or pixels) with no attached meaning.
+
+L1 — Affective Response
+Definition: The automatic physiological value assigned to the signal.
+
+Function: Immediate triggering of valence (good/bad) and arousal (intensity/alertness) based on prior conditioning.
+
+State: The word functions as a stimulus that provokes a "gut reaction" before conscious recognition.
+
+L2 — Concept Categorization
+Definition: The abstract mental prototype.
+
+Function: Mapping the sensory signal to a static, generalized category or object identity.
+
+State: The word is identified as a specific "thing" (e.g., identifying a specific animal or object type) independent of context.
+
+L3 — Relational Context
+Definition: The active knowledge graph and memory retrieval.
+
+Function: Activating the web of associations, causal logic, and specific personal memories linked to the category.
+
+State: The word becomes a node connected to other concepts (physics, history, personal experience), providing depth and grounding.
+
+L4 — Symbolic Representation
+Definition: The linguistic token.
+
+Function: Compressing the complex information from L0–L3 into a specific discrete label (spelling/pronunciation).
+
+State: The word is formatted into a standardized symbol that can be transmitted to others.
+
+L5 — Pragmatic Utility
+Definition: The communicative intent.
+
+Function: Selecting or modifying the symbol based on the current social environment, the listener’s state, and the desired outcome.
+
+State: The word is filtered or adjusted to serve a specific function (e.g., to inform, to deceive, to comfort) within the interaction.

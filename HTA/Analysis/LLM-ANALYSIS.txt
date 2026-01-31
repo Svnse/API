@@ -1,0 +1,53 @@
+### L0 — Sensory Signal
+
+**Human State:** Raw physical artifact (sound wave/pixel).
+**LLM Impact:** **15% (Critical Failure)**
+
+* **Example:** Tokenizers split "suns3t" into `[sun, s, 3, t]`, destroying the visual morphology. The model sees integers, not data.
+* **The Component:** **Byte Pair Encoding (BPE).** It forces discrete steps too early, discarding signal noise that contains meaning.
+* **The Fix:** **Remove Tokenizer.** Implement **Byte Latent Transformers** or **Vision Patches** to process raw byte streams/pixels directly.
+
+### L1 — Affective Response
+
+**Human State:** Physiological valence (gut feeling).
+**LLM Impact:** **5% (Non-Existent)**
+
+* **Example:** "Death" and "Bread" are processed with identical computational energy. There is no biological "weight" or "fear."
+* **The Component:** **Stateless Attention.** Attention heads calculate mathematical relevance, not survival importance. The model resets after every generation.
+* **The Fix:** **Homeostatic State Vector.** Introduce a persistent global vector (representing "mood" or "arousal") that carries over between inference steps and modulates attention weights.
+
+### L2 — Concept Categorization
+
+**Human State:** Abstract prototypes (The "Idea").
+**LLM Impact:** **95% (Superhuman)**
+
+* **Example:** Perfectly maps "King - Man + Woman = Queen" in vector space without explicit definitions.
+* **The Component:** **High-Dimensional Embeddings.** This is the native strength of Transformers; they are massive clustering engines.
+* **The Fix:** **None.** Maintain current dense vector architecture.
+
+### L3 — Relational Context
+
+**Human State:** Causal world model & physics.
+**LLM Impact:** **35% (Hallucinatory)**
+
+* **Example:** It predicts a dropped glass breaks because the words "glass" and "break" correlate statistically, not because it understands gravity or material hardness.
+* **The Component:** **Feed-Forward Networks (FFNs).** These act as static key-value memories. They memorize facts but cannot "run" a simulation.
+* **The Fix:** **External Epistemic Engine.** Replace FFN memorization with calls to a logic engine or causal graph (like your **Acatalepsy** layer) to verify state transitions.
+
+### L4 — Symbolic Representation
+
+**Human State:** Discrete language tokens.
+**LLM Impact:** **100% (Native)**
+
+* **Example:** Flawless syntax generation and vocabulary mapping.
+* **The Component:** **Softmax Layer.** The architecture is explicitly designed to output probability distributions over discrete symbols.
+* **The Fix:** **None.**
+
+### L5 — Pragmatic Utility
+
+**Human State:** Intent and goal-direction.
+**LLM Impact:** **45% (Artificial)**
+
+* **Example:** The model answers helpful queries but lacks true agency; it simulates helpfulness because it was rewarded for it, not because it "wants" the outcome.
+* **The Component:** **Next-Token Prediction Objective.** The model optimizes for *plausibility*, not *success*.
+* **The Fix:** **Inference-Time Search.** Implement a "System 2" loop (like Tree of Thoughts) where the model generates multiple paths, evaluates them against a goal function, and selects the winner *before* outputting.

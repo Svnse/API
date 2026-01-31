@@ -1,0 +1,30 @@
+REPRESENTATION INTERFACE
+
+How information enters/exits the system
+Continuous ↔ Discrete spectrum
+Signal preservation ↔ Lossy compression spectrum
+Mechanical question: How much of the input space survives transformation?
+
+
+STATE DYNAMICS
+
+How the system evolves through time
+Stateless ↔ Stateful spectrum
+Memoryless ↔ History-dependent spectrum
+Mechanical question: Does t+1 depend only on input, or also on t-n?
+
+
+TRANSFORMATION ARCHITECTURE
+
+What computational operation maps input→output
+Pattern-matching ↔ Mechanism-simulation spectrum
+Statistical ↔ Logical spectrum
+Mechanical question: Does it interpolate training data or execute symbolic rules?
+
+
+OBJECTIVE TOPOLOGY
+
+What governs which transformations occur
+Reactive ↔ Predictive ↔ Goal-directed spectrum
+Local (next-token) ↔ Global (outcome) optimization
+Mechanical question: What does the loss function actually measure?
